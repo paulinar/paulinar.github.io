@@ -171,6 +171,7 @@ h2 {
 	font-size: 28px;
 	line-height: 34px;
 	font-weight: 300;
+/*	margin-bottom: 10px;*/
 	margin-bottom: 30px;
 }
 
@@ -187,7 +188,15 @@ h4 {
 	font-weight: 400;
 }
 
+h5 {
+	font-size: 70px;
+	line-height: 58px;
+	font-weight: 300;
+	color: #000000;
+}
+
 p {
+	margin-top: 20px;
 	margin-bottom: 10px;
 }
 
@@ -560,6 +569,7 @@ section .container {
 }
 
 section > .container {
+/*	padding-bottom: 0px;*/
 	padding-bottom: 80px;
 }
 
@@ -569,6 +579,7 @@ Intro
 
 #intro {
 /*	background: url(http://placehold.it/1920x1200) no-repeat center center fixed; */
+	/*background: url("../images/tree-of-hands-background.jpg") no-repeat center center fixed;*/
 	background: url("../images/banner2.jpg") no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -588,6 +599,8 @@ Intro
 	padding-top: 20px;
 	padding-bottom: 20px;
 	font-weight: 700;
+/*	position: relative;
+	top: -60px;*/
 }
 
 #intro h1 span {
@@ -595,18 +608,26 @@ Intro
 }
 
 #intro h2 {
-	color: #ffffff;
+	color: #000000;
 	padding-top: 20px;
 	padding-bottom: 20px;
+/*	color: #000000;
+	padding-top: 13px;
+	padding-bottom: 0px;
+	font-weight: 400;
+	font-size: 23px;*/
 }
 
 .get-started {
 	position: relative;
-	margin: 50px auto 0px auto;
-	display: block;
+/*	margin: 50px auto 0px auto;
+	display: block;*/
+	margin: 10px auto 0px 24px;
+	display: inline-block;
 	text-align: center;
 	width: 130px;
-	padding: 10px 5px;
+	padding: 8px 4px;
+/*	padding: 10px 5px;*/
 	background-color: #d00355;
 	color: #ffffff;
 }
