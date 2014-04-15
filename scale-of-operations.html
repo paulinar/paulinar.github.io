@@ -16,7 +16,7 @@
 }
 
 .label {
-  font: 11px Helvetica;
+  font: 21px Helvetica;
   text-anchor: middle;
   text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
 }
@@ -29,7 +29,7 @@
 
 </style>
 <body>
-<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="js/d3.min.js"></script>
 <script>
 
 var margin = 20,
@@ -51,8 +51,34 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
 
-d3.json("scaleofoperations.json", function(error, root) {
-  if (error) return console.error(error);
+ root = {
+  "name": "CARGILL",
+  "children": [
+         {
+   "name": "Food Ingredients", "size":1000
+  },
+         {
+   "name": "Financial", "size":1000
+  },
+         {
+   "name": "Energy and Industrial", "size":1000
+  },
+         {
+   "name": "Animal Feed and Nutrition", "size":1000
+  },
+         {
+   "name": "Meat, Poultry, and Eggs", "size":1000
+  },
+         {
+   "name": "Farmer Services", "size":1000
+
+  },
+         {
+   "name": "Origination and Processing", "size":1000
+
+  }
+    ]
+ }
 
   var focus = root,
       nodes = pack.nodes(root),
@@ -103,7 +129,6 @@ d3.json("scaleofoperations.json", function(error, root) {
     node.attr("transform", function(d) { return "translate(" + (d.x - v[0]) * k + "," + (d.y - v[1]) * k + ")"; });
     circle.attr("r", function(d) { return d.r * k; });
   }
-});
 
 d3.select(self.frameElement).style("height", diameter + "px");
 

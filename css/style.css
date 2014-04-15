@@ -192,7 +192,10 @@ h5 {
 	font-size: 70px;
 	line-height: 58px;
 	font-weight: 300;
-	color: #000000;
+	color: #ffffff;
+	padding-left: 11px;
+	padding-right: 11px;
+	margin-top: 10px;
 }
 
 p {
@@ -1006,4 +1009,14 @@ form.contact-form textarea {
 
 .form-error {
 	background: #fcdcdc !important;
+}
+
+/* Custom Additions */
+#page-title {
+	background-color: #d00355;
+	display: inline-block;
+}
+
+#page-menu {
+	margin-top: 20px;
 }
