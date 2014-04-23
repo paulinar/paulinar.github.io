@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Arc.js</title>
+
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+<script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.css' rel='stylesheet' />
+
+<style>
+  body { margin:0; padding:0; }
+  #map { position:absolute; top:0; bottom:0; width:100%; }
+</style>
+</head>
+<body>
+
+
+<script src='js/arc.js'></script>
+<div id='map'></div>
+
+<script>
+try{
+var map = L.mapbox.map('map', 'examples.map-20v6611k')
+    .setView([42.87596410238254, -100.546875], 4);
+
+// Berkeley to NYC Arc
+// Start and end points, in x = longitude, y = latitude values
+var start = { x: -122.2728, y: 37.8717 };
+var end = { x: -73.9400, y: 40.6700 };
+var generator = new arc.GreatCircle(start, end, { name: 'Berkeley to NYC' });
+var line = generator.Arc(100, { offset: 10 });
+L.geoJson(line.json()).addTo(map);
+
+// Seattle to NYC Arc
+// Start and end points, in x = longitude, y = latitude values
+var start2 = { x: -122.3331, y: 47.6097 };
+var end2 = { x: -73.9400, y: 40.6700  };
+var generator2 = new arc.GreatCircle(start2, end2, { name: 'Seattle to NYC' });
+var line2 = generator2.Arc(100, { offset: 10 });
+L.geoJson(line2.json()).addTo(map);
+
+// NYC to London Arc
+// Start and end points, in x = longitude, y = latitude values
+var start3 = { x: -73.9400, y: 40.6700  };
+var end3 = { x: -0.1275, y: 51.5072  };
+var generator3 = new arc.GreatCircle(start3, end3, { name: 'NYC to London' });
+var line3 = generator3.Arc(100, { offset: 10 });
+L.geoJson(line3.json()).addTo(map);
+
+// Dallas to NYC Arc
+// Start and end points, in x = longitude, y = latitude values
+var start4 = { x: -96.7967, y: 32.7758 };
+var end4 = { x: -73.9400, y: 40.6700  };
+var generator4 = new arc.GreatCircle(start4, end4, { name: 'Dallas to NYC' });
+var line4 = generator4.Arc(100, { offset: 10 });
+L.geoJson(line4.json()).addTo(map);
+
+// LA to NYC Arc
+// Start and end points, in x = longitude, y = latitude values
+var start5 = { x: -118.2500, y: 34.0500 };
+var end5 = { x: -73.9400, y: 40.6700  };
+var generator5 = new arc.GreatCircle(start5, end5, { name: 'LA to NYC' });
+var line5 = generator5.Arc(100, { offset: 10 });
+L.geoJson(line5.json()).addTo(map);
+} catch (Error){}
+</script>
+
+
+</body>
+</html>
