@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en-US" class="no-js">
+<meta charset="utf-8">
+<!-- <html dir="ltr" lang="en-US" class="no-js"> -->
+<html dir="ltr" lang="en-US">
 	<head>
 
 		<!-- ==============================================
@@ -24,6 +26,7 @@
 		<link rel="stylesheet" href="css/flexslider.css"> <!-- Flexslider -->
 		<link rel="stylesheet" href="css/style.css"> <!-- Main stylesheet -->
 		<link rel="stylesheet" href="css/responsive.css"> <!-- Main stylesheet responsive -->
+		<link rel="stylesheet" href="css/types-of-corps.css">
 
 		<!--[if IE 7]>
 			<link rel="stylesheet" href="css/font-awesome-ie7.min.css">
@@ -42,6 +45,8 @@
 		JS
 		=============================================== -->
 		<script type="text/javascript" src="js/modernizr.js"></script> <!-- Modernizr file -->
+		<script src="http://d3js.org/d3.v3.min.js"></script>
+		<script type="text/javascript" src="js/d3.min.js"></script>
 
 		<!-- ==============================================
 		Favicons
@@ -209,6 +214,42 @@
 								<h3>Info</h3>
 								<p>Most agribusiness corporations operate across world borders in many countries. Its operations are diverse and involve extensive capital and infrastructure to maintain its business and growth. Oftentimes, these corporations can control markets and prices, thus giving them immense power within the food system. This section focuses on those corporations that are involved in the global food system and visually explains its structure and role in this system.</p>
 
+Infographic: Types of Corporations
+<div class="tree">
+	<ul>
+		<li>
+			<a href="#">Board</a>
+			<ul>
+				<li>
+					<a href="#">CEO</a>
+					<ul>
+						<li>
+							<a href="#">COO</a>
+						</li>
+						<li>
+							<a href='#'>Human Resources Director</a>
+						</li>
+						<li>
+							<a href='#'>CFO</a>
+						</li>
+						<li>
+							<a href='#'>Corporate Vice President</a>
+						</li>
+						<li>
+							<a href='#'>IT Director</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Vice Chairman of the Board</a>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+
+
+
 								<h3>Introduction</h3>
 								<p>
 									<ul class="icon">
@@ -316,7 +357,89 @@
 										<li><i class="icon-leaf"></i>It would also be useful to include the amount of energy expended in this trade (cost of travel from A to B and carbon emissions expended in its transport), though this type of quantitative data would be more difficult to find</li>
 									</ul>
 
+<p> Infographic: Trade Flows #1 <br>
+<script type="text/javascript"
+           src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1.1','packages':['sankey']}]}">
+</script>
+
+<div id="sankey_multiple" style="width: 900px; height: 300px;"></div>
+
+<script type="text/javascript">
+//from https://developers.google.com/chart/interactive/docs/gallery/sankey
+google.setOnLoadCallback(drawChart);
+   function drawChart() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'From');
+    data.addColumn('string', 'To');
+    data.addColumn('number', 'Weight');
+    data.addRows([
+       [ 'Berkeley', 'Portugal', 1 ],
+       [ 'Berkeley', 'France', 1 ],
+       [ 'Berkeley', 'Spain', 1 ],
+       [ 'Berkeley', 'England', 1 ],
+       [ 'Canada', 'Portugal', 1 ],
+       [ 'Canada', 'France', 5 ],
+       [ 'Canada', 'England', 1 ],
+       [ 'Mexico', 'Portugal', 1 ],
+       [ 'Mexico', 'France', 1 ],
+       [ 'Mexico', 'Spain', 5 ],
+       [ 'Mexico', 'England', 1 ],
+       [ 'USA', 'Portugal', 1 ],
+       [ 'USA', 'France', 1 ],
+       [ 'USA', 'Spain', 1 ],
+       [ 'USA', 'England', 5 ],
+       [ 'Portugal', 'Angola', 2 ],
+       [ 'Portugal', 'Senegal', 1 ],
+       [ 'Portugal', 'Morocco', 1 ],
+       [ 'Portugal', 'South Africa', 3 ],
+       [ 'France', 'Angola', 1 ],
+       [ 'France', 'Senegal', 3 ],
+       [ 'France', 'Mali', 3 ],
+       [ 'France', 'Morocco', 3 ],
+       [ 'France', 'South Africa', 1 ],
+       [ 'Spain', 'Senegal', 1 ],
+       [ 'Spain', 'Morocco', 3 ],
+       [ 'Spain', 'South Africa', 1 ],
+       [ 'England', 'Angola', 1 ],
+       [ 'England', 'Senegal', 1 ],
+       [ 'England', 'Morocco', 2 ],
+       [ 'England', 'South Africa', 7 ],
+       [ 'South Africa', 'China', 5 ],
+       [ 'South Africa', 'India', 1 ],
+       [ 'South Africa', 'Japan', 3 ],
+       [ 'Angola', 'China', 5 ],
+       [ 'Angola', 'India', 1 ],
+       [ 'Angola', 'Japan', 3 ],
+       [ 'Senegal', 'China', 5 ],
+       [ 'Senegal', 'India', 1 ],
+       [ 'Senegal', 'Japan', 3 ],
+       [ 'Mali', 'China', 5 ],
+       [ 'Mali', 'India', 1 ],
+       [ 'Mali', 'Japan', 3 ],
+       [ 'Morocco', 'China', 5 ],
+       [ 'Morocco', 'India', 1 ],
+       [ 'Morocco', 'Japan', 3 ],
+    ]);
+
+    // Set chart options
+    var options = {
+          width: 800,
+          sankey: {
+            link: { color: { fill: '#82CAFF' } },
+            node: { color: { fill: '#254117' },
+                    label: { color: '#000000' } },
+          }
+    };
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.Sankey(document.getElementById('sankey_multiple'));
+    chart.draw(data, options);
+   }
+</script>
+
+
 								</p>
+<p>
 
 								<h1>Scale of Operations</h1>
 								<hr class="fancy-hr">
@@ -336,6 +459,8 @@
 										<li><i class="icon-leaf"></i>Look at corporate branding tactics and how this differs from reality of their business practice e.g. Monsanto describes itself as “sustainable” and Walmart as “saving money and living better”</li>
 									</ul>
 								</p>
+
+
 
 					</div> <!-- End Span12 -->
 				</div> <!-- End Row -->
