@@ -5,7 +5,7 @@ A website for the Global Justice Program at the Haas Institute for a Fair and In
 
 Unable to integrate:
 
-- brands.html (try again)
+- brands.html 
 - communities.html (try again)
 - scale-of-operations.html (try again)
 - tradeflows2.html
