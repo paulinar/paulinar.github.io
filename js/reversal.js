@@ -517,8 +517,8 @@ $(document).ready(function() {
             mapHideText = 'Hide Map',
             mapMarkerTitle = 'Reversal',
             $mainNavLinks = $('nav#main-nav a'),
-            contactID = "contacts",
-            $contactsContainer = $('#contacts .container');
+            contactID = "resources",
+            $resourcesContainer = $('#resources .container');
 
         $mapTrigger.on('click', function(event) {
 
@@ -542,7 +542,7 @@ $(document).ready(function() {
 
         function showMap() {
             $contactForm.fadeOut(mapFadeTime, function() {
-                var cHeight = $contactsContainer.outerHeight(),
+                var cHeight = $resourcesContainer.outerHeight(),
                     wHight = $(window).height();
                 if(cHeight > wHight) {
                     $map.css({ 'height' : cHeight }).show(); 

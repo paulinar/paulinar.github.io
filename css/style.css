@@ -651,7 +651,7 @@ Intro
 
 /* For navigation links */
 
-.get-started-2 {
+.menu {
 	position: relative;
 	margin: 0px auto 40px auto;
 	margin-right: 4px;
@@ -664,17 +664,17 @@ Intro
 	color: #ffffff;
 }
 
-.get-started-2 i {
+.menu i {
 	color: #111111;
 	margin-left: 10px;
 }
 
-.get-started-2:hover {
+.menu:hover {
 	color: #ffffff;
 	background: #111111;
 }
 
-.get-started-2:hover i {
+.menu:hover i {
 	color: #d00355;
 }
 
@@ -688,18 +688,18 @@ Intro
 }
 
 /* ==================================================================
-About
+Corporations
 ================================================================== */
 
-#about {
+#corporations {
 
 }
 
 /* ==================================================================
-Services
+Health
 ================================================================== */
 
-#services {
+#health {
 	
 }
 
@@ -758,7 +758,7 @@ Services
 }
 
 /* ==================================================================
-Portfolio
+Communities
 ================================================================== */
 
 #portfolio {
@@ -946,10 +946,10 @@ Isotope Transitions
 }
 
 /* ==================================================================
-Contacts
+Resources
 ================================================================== */
 
-#contacts {
+#resources {
 /*	background: url(http://placehold.it/1920x1500) no-repeat center center;*/
 }
 
