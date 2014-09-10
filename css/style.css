@@ -35,7 +35,8 @@
 	font-family: Lato-Light;
 /*	font-weight: 600;*/
 	color: #FFEEE0;
-	font-size: 41px;
+	font-size: 39px;
+	margin-left: 5px;
 }
 
 .font-semibold-v2 {
@@ -218,23 +219,23 @@ body {
 			
 	.nav li[data-slide="1"],
 	.nav li[data-slide="6"] {
-		background-color: #2f2f2f;
+		background-color: #4e4e4e;
 	}
 	
 	.nav li[data-slide="2"] {
-		background-color: #1abc9c;
+		background-color: #3F1905;
 	}
 	
 	.nav li[data-slide="3"] {
-		background-color: #e74c3c;
+		background-color: #5FB1C6;
 	}
 	
 	.nav li[data-slide="4"] {
-		background-color: #34495e;
+		background-color: #54DEB1;
 	}
 	
 	.nav li[data-slide="5"] {
-		background-color: #e67e22;
+		background-color: #730038;
 	}
 	
 	.navbar-brand {
@@ -362,15 +363,15 @@ body {
 
 	.title-row-v2 {
 		font-size: 60px;
-		padding-bottom: 35px;
-		padding-top: 60px;
+		padding-bottom: 20px;
+		padding-top: 48px;
 		font-family: LearningCurve;
 
 	}
 	
 	.line-row .hr {
-		background-color: #e4e6e5;
-		height: 5px;
+		background-color: #811B4D;
+		height: 2px;
 		margin: 0 auto;
 		width: 33%;
 	}
@@ -497,7 +498,7 @@ body {
 #slide-4 {
 	background-color: #1abc9c;
 	color: #e4e6e5;
-	padding-top: 90px;
+	padding-top: 115px;
 	height: 100%;
 }
 
@@ -509,7 +510,8 @@ body {
 #slide-5 {
 	background-color: #730038;
 	color: #e4e6e5;
-	padding-top: 90px;
+	padding-top: 40px;
+	height: 100%;
 }
 
 #slide-6 {
@@ -756,6 +758,7 @@ body {
 h3, .h3 {
 	font-size: 20px;
 	font-family: Lato-Light;
+	text-transform: uppercase;
 }
 
 #subtitle-student {
@@ -792,21 +795,28 @@ h1, h2, h3 {
 }
 
 .solo-shot {
+	float: left;
+	margin-right: 20px;
 }
 
 .about {
 /*	text-align: center;*/
 	display: inline-block;
+	width: 679px;
+	margin: 0 auto;
 }
 
 .blurb {
-	width: 50%;
+/*	width: 50%;*/
+	margin-left: 30px;
+	margin-top: -26px;
 }
 
 .title {
-	font-size: 47px;
+	font-size: 68px;
 	font-family: Halo-Handletter;
 	color: #000000;
+	text-align: left;
 }
 
 .content {
@@ -815,10 +825,16 @@ h1, h2, h3 {
 }
 
 .logos-container {
-    display: inline;
-    height: 48px;
     margin: 0;
     padding: 0;
     position: relative;
-    white-space: nowrap;
+}
+
+.logos {
+	display: inline-block;
+	margin: 27px;
+}
+
+.logos img {
+	height: 57px;
 }
