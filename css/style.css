@@ -50,6 +50,10 @@
   	text-decoration: none; 
 }
 
+.font-semibold-v2 a {
+  	color: #D7A0AD;
+}
+
 .font-light {
 	font-family: "Titillium Web", sans-serif;
 	font-weight: 300;
@@ -837,4 +841,9 @@ h1, h2, h3 {
 
 .logos img {
 	height: 57px;
+}
+
+a:hover, a:focus {
+	color: #D7A0AD;
+	text-decoration: none; 
 }
