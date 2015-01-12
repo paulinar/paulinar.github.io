@@ -463,7 +463,7 @@ body {
 #slide-3 {
 	background-color: #5FB1C6;
 	margin: 0 auto;
-	overflow: hidden;
+	overflow: auto;
 	padding: 0;
 	text-align: left;
 	width: 100%;
