@@ -54,6 +54,25 @@
   	color: #D7A0AD;
 }
 
+.font-semibold-v3 {
+/*	font-family: "Titillium Web", sans-serif;*/
+	font-family: Lato-Light;
+/*	font-weight: 600;*/
+/*	color: #feebc3;*/
+	color: #d7a0ad;
+	font-size: 44px;
+	border-bottom: 1px dashed #A4CA39;
+  	text-decoration: none; 
+}
+
+.font-semibold-v3 a {
+  	color: #A4CA39;
+}
+
+.font-semibold-v3 a:hover{
+  	cursor: pointer;
+}
+
 .font-light {
 	font-family: "Titillium Web", sans-serif;
 	font-weight: 300;
@@ -362,7 +381,7 @@ body {
 
 	.title-row {
 		font-size: 45px;
-		padding-bottom: 50px;
+		padding-bottom: 30px;
 	}
 
 	.title-row-v2 {
@@ -748,7 +767,6 @@ body {
 }
 
 .resume-container {
-	padding-top: 10%;
 }
 
 /* custom glyphicons */
